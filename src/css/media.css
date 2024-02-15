@@ -1,0 +1,368 @@
+  @media screen and (max-width: 1020px) {  
+    /*Header*/
+    #header {
+        padding: 50px;
+    }
+
+    #header .header-right .header-logo i {
+        display: flex;
+    }
+    
+    #header .header-right .header-nav {
+        display: none;
+    }
+    /*Header*/
+
+    /*Main*/
+    #main .main-info {
+        max-width: 600px;
+        padding: 0 50px;
+    }
+
+    #main .main-info h1 {
+        font-size: 40px;
+    }
+
+    #main .main-info p {
+        font-size: 18px;
+    }
+
+    #main .main-info .main-button {
+        width: 40%;
+    }
+
+    #main .main-info .main-button a {
+        font-size: 18px;
+    }
+    /*Main*/
+
+    /*Highlights*/
+    #highlights {
+        padding: 50px;
+    }
+
+    #highlights h1 {
+        font-size: 40px;
+    }
+
+    #highlights .highlights-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+
+    #highlights .highlights-content .got, #highlights .highlights-content .studio, #highlights .highlights-content .sales {
+        width: 50%;
+    }
+
+    #highlights .highlights-content .got img, #highlights .highlights-content .studio img, #highlights .highlights-content .sales img {
+        width: 25%;
+    }
+    /*Highlights*/
+
+    /*Content*/
+    #content {
+        padding: 50px;
+    }
+
+    #content h1 {
+        font-size: 40px;
+    }
+
+    #content .content-info {
+        max-width: 90%;
+        gap: 30px;
+    }
+
+    #content .content-info::after {
+        background: linear-gradient(to top, rgba(0, 0, 0, .75), rgba(0, 0, 0, .85) 20%, transparent 70%);;
+    }
+
+    #content .content-info i {
+        font-size: 30px;
+    }
+
+    #content .content-info .content-info-text {
+        max-width: 95%;
+        padding: 20px;
+    }
+
+    #content .content-info .content-info-text h2 {
+        font-size: 25px;
+    }
+
+    #content .content-info .content-info-text p {
+        font-size: 15px;
+        line-height: 16px;
+    }
+    /*Content*/
+
+    /*Trailer*/
+    #trailer {
+        padding: 50px;
+    }
+
+    #trailer h1 {
+        font-size: 40px;
+    }
+    
+    #trailer .trailer-content {
+        max-width: 90%;
+    }
+    /*Trailer*/
+
+    /*Buy*/
+    #buy {
+        padding: 50px;
+    }
+
+    #buy h1 {
+        font-size: 40px;
+    }
+
+    #buy .buy-container {
+        max-width: 70%;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #buy .buy-container .cover {
+        max-width: 70%;
+    }
+
+    #buy .buy-container .buy-info {
+        max-width: 80%;
+        align-items: center;
+    }
+
+    #buy .buy-container .buy-info .buy-texto {
+        align-items: center;
+        text-align: center;
+    }
+
+    #buy .buy-container .buy-info .buy-texto h2 {
+        font-size: 40px;
+    }
+    /*Buy*/
+ }
+
+ @media screen and (max-width: 650px) {
+    /*Header*/
+    #header {
+        padding: 30px;
+    }
+
+    #header .header-right .header-logo img {
+        width: 120px;
+    }
+
+    #header .header-right .header-logo i {
+        font-size: 25px;
+    }
+
+    #header .header-button {
+        padding: 10px;
+    }
+
+    #header .header-button a {
+        font-size: 12px;
+    }
+    /*Header*/
+
+    /*Main*/
+    #main::after {
+        background: linear-gradient(to right, #000000d9, #000000b2 55%, transparent 85%);
+    }
+
+    #main .main-info {
+        max-width: 450px;
+        gap: 20px;
+        padding: 30px;
+    }
+
+    #main .main-info h1 {
+        font-size: 30px;
+    }
+
+    #main .main-info p {
+        font-size: 15px;
+    }
+
+    #main .main-info .main-button {
+        padding: 10px;
+    }
+
+    #main .main-info .main-button a {
+        font-size: 12px;
+    }
+    /*Main*/
+
+    /*Highlights*/
+    #highlights {
+        padding: 30px;
+    }
+
+    #highlights h1 {
+        font-size: 30px;
+    }
+
+    #highlights .highlights-content {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #highlights .highlights-content .got, #highlights .highlights-content .studio, #highlights .highlights-content .sales {
+        width: 70%;
+    }
+
+    #highlights .highlights-content .got img, #highlights .highlights-content .studio img, #highlights .highlights-content .sales img {
+        width: 20%;
+    }
+
+    #highlights .highlights-content .got p, #highlights .highlights-content .studio p, #highlights .highlights-content .sales p {
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    /*Highlights*/
+
+    /*Content*/
+    #content {
+        padding: 30px;
+    }
+
+    #content h1 {
+        font-size: 30px;
+    }
+
+    #content .content-info {
+        max-width: 100%;
+        margin-top: 50px;
+        gap: 20px;
+    }
+
+    #content .content-info::after {
+        background: linear-gradient(to top, rgba(0, 0, 0, .75), rgba(0, 0, 0, .65) 30%, transparent 70%);
+    }
+
+    #content .content-info i {
+        display: none;
+    }
+
+    #content .content-info .content-info-text {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    #content .content-info .content-info-text h2 {
+        font-size: 20px;
+    }
+
+    #content .content-info .content-info-text p {
+        font-size: 10px;
+        line-height: 12px;
+    }
+    /*Content*/
+
+    /*Trailer*/
+    #trailer {
+        padding: 30px;
+    }
+
+    #trailer h1 {
+        font-size: 30px;
+    }
+
+    #trailer .trailer-content .trailer-iframe {
+        margin-top: 50px;
+    }
+    /*Trailer*/
+
+    /*Buy*/
+    #buy {
+        padding: 30px;
+    }
+
+    #buy h1 {
+        font-size: 30px;
+    }
+
+    #buy .buy-container {
+        margin-top: 50px;
+        max-width: 90%;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    #buy .buy-container .cover {
+        max-width: 70%;
+    }
+
+    #buy .buy-container .buy-info {
+        max-width: 100%;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #buy .buy-container .buy-info .buy-texto h2 {
+        font-size: 30px;
+    }
+
+    #buy .buy-container .buy-info .buy-texto p {
+        font-size: 16px;
+    }
+    
+    #buy .buy-container .buy-info .buy-button button {
+        padding: 10px;
+    }
+    
+    #buy .buy-container .buy-info .buy-button button span {
+        font-size: 12px;
+    }
+    /*Buy*/
+
+    /*Footer*/
+    #footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    #footer .footer-nav .footer-menu {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #footer .footer-nav .footer-menu li a {
+        font-size: 15px;
+    }
+
+    #footer .footer-logo {
+        max-width: 50%;
+    }
+    
+    #footer .footer-nav-social p {
+        font-size: 15px;
+    }
+
+    #footer .footer-nav-social .footer-menu-social {
+        margin-top: 15px;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #footer .footer-nav-social .footer-menu-social li a {
+        font-size: 20px;
+    }
+    /*Footer*/
+ }

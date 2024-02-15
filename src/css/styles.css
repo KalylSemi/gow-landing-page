@@ -1,0 +1,443 @@
+/*Header*/
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    padding: 30px 100px;
+    z-index: 2;
+}
+
+#header .header-right {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+#header .header-right .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#header .header-right .header-logo img {
+    width: 200px;
+}
+
+#header .header-right .header-logo i {
+    font-size: 30px;
+    display: none;
+}
+
+#header .header-right .header-nav .header-menu {
+    display: flex;
+    gap: 30px;
+}
+
+#header .header-right .header-nav .header-menu li a {
+    color: var(--white);
+    font-family: 'JosefinSans-Regular';
+    font-size: 18px;
+}
+
+#header .header-button {
+    background-image: var(--button-red);
+    color: var(--white);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#header .header-button a {
+    font-family: 'JosefinSans-Medium';
+    font-size: 15px;
+}
+/*Header*/
+
+/*Main*/
+#main {
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+#main::after {
+    background: var(--black-gradient-text-1);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+}
+
+#main img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#main .main-info {
+    color: var(--white);
+    max-width: 850px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    gap: 30px;
+    padding: 0 100px;
+    z-index: 1;
+}
+
+#main .main-info h1 {
+    font-family: 'Cinzel';
+    font-size: 50px;
+    font-weight: 800;
+}
+
+#main .main-info p {
+    font-family: 'JosefinSans-Light';
+    font-size: 18px;
+    line-height: 23px;
+}
+
+#main .main-info .main-button {
+    width: 30%;
+    background-image: var(--button-red);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#main .main-info .main-button a {
+    color: var(--white);
+    font-family: 'JosefinSans-Medium';
+    font-size: 18px;
+}
+/*Main*/
+
+/*Section - Highlights*/
+#highlights {
+    background-image: var(--black-gradient-background-top);
+    color: var(--white);
+    text-align: center;
+    padding: 100px;
+}
+
+#highlights h1 {
+    font-family: 'Cinzel';
+    font-size: 50px;
+    font-weight: 800;
+}
+
+#highlights .highlights-content {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 150px;
+}
+
+#highlights .highlights-content .got, #highlights .highlights-content .studio, #highlights .highlights-content .sales {
+    width: 20%;
+}
+
+#highlights .highlights-content .got p, #highlights .highlights-content .studio p, #highlights .highlights-content .sales p {
+    margin-top: 30px;
+    font-family: 'JosefinSans-Light';
+    font-size: 18px;
+    line-height: 23px;
+}
+/*Section - Highlights*/
+
+/*Section - Content*/
+#content {
+    background-image: url("../assets/gow-content-1.jpg");
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    padding: 100px;
+}
+
+#content::after {
+    background-color: var(--black);
+    opacity: 60%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+}
+
+#content h1 {
+    font-family: 'Cinzel';
+    font-size: 50px;
+    font-weight: 800;
+    z-index: 1;
+}
+
+#content .content-info {
+    margin-top: 100px;
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 50px;
+    z-index: 1;
+}
+
+#content .content-info::after {
+    background: var(--black-gradient-text-2);
+    width: 100%; 
+    height: 100%;
+    position: absolute; 
+    content: '';
+}
+
+#content .content-info i {
+    font-size: 30px;
+}
+
+#content .content-info .image {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#content .content-info .content-info-text {
+    max-width: 95%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    padding: 30px;
+    z-index: 1;
+}
+
+#content .content-info .content-info-text h2 {
+    font-family: 'Cinzel';
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#content .content-info .content-info-text p {
+    margin-top: 10px;
+    font-family: 'JosefinSans-Light';
+    font-size: 15px;
+    line-height: 16px;
+}
+/*Section - Content*/
+
+/*Section - Trailer*/
+#trailer {
+    background: var(--black-gradient-background-bottom);
+    color: var(--white);
+    text-align: center;
+    padding: 100px;
+}
+
+#trailer h1 {
+    font-family: 'Cinzel';
+    font-size: 50px;
+    font-weight: 800;
+}
+
+#trailer .trailer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#trailer .trailer-content .trailer-iframe {
+    margin-top: 100px;
+    width: 100%;
+    height: 0;
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção de aspecto ajustada para 16:9 */
+}
+
+#trailer .trailer-content .trailer-iframe iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*Section - Trailer*/
+
+/*Section - Buy*/
+#buy {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 100px;
+}
+
+#buy::after {
+    background-image: url("../assets/gow-banner-2.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+}
+
+#buy h1 {
+    font-family: 'Cinzel';
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    z-index: 1;
+}
+
+#buy .buy-container {
+    margin-top: 100px;
+    background: rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(13.7px);
+    -webkit-backdrop-filter: blur(13.7px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 100px;
+    padding: 50px;
+    z-index: 1;
+    /*transition: all 1s;*/
+}
+/*
+#buy .buy-container:hover {
+    transform: perspective(1000px) rotateX(2deg) rotateY(-5deg);
+}
+*/
+#buy .buy-container .cover {
+    max-width: 40%;
+}
+
+#buy .buy-container .cover img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#buy .buy-container .buy-info {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+#buy .buy-container .buy-info .buy-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px; 
+}
+
+#buy .buy-container .buy-info .buy-texto h2 {
+    font-family: 'Cinzel';
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#buy .buy-container .buy-info .buy-texto p {
+    font-family: 'JosefinSans-Light';
+    font-size: 18px;
+    line-height: 23px;
+}
+
+#buy .buy-container .buy-info .buy-texto .buy-platforms {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#buy .buy-container .buy-info .buy-button {
+    width: 100%;
+}
+
+#buy .buy-container .buy-info .buy-button button {
+    background-image: var(--button-red);
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#buy .buy-container .buy-info .buy-button button span {
+    color: var(--white);
+    font-family: 'JosefinSans-Medium';
+    font-size: 18px;
+}
+/*Section - buy*/
+
+/*Footer*/
+#footer {
+    background-image: var(--black-gradient-background-top);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+#footer .footer-nav .footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#footer .footer-nav .footer-menu li a {
+    color: var(--white);
+    font-family: 'JosefinSans-Regular';
+    font-size: 18px;
+}
+
+#footer .footer-logo {
+    max-width: 90%;
+}
+
+#footer .footer-logo img {
+    width: 100%;
+}
+
+#footer .footer-nav-social p {
+    color: var(--white);
+    font-family: 'JosefinSans-Regular';
+    font-size: 18px;
+}
+
+#footer .footer-nav-social .footer-menu-social {
+    margin-top: 10px;
+    max-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#footer .footer-nav-social .footer-menu-social li a {
+    font-size: 25px;
+}
+/*Footer*/
+
+/*Development*/
+#development {
+    background-image: linear-gradient(to left, #a80404 0%, #720303 69%);
+    color: var(--white);
+    text-align: center;
+    padding: 10px;
+}
+
+#development span {
+    font-family: 'JosefinSans-Medium';
+    font-size: 10px;
+}
+/*Development*/
