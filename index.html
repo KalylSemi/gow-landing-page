@@ -15,11 +15,11 @@
 </head>
 <body>
     <!-- Header -->
-    <header id="header">
+    <header id="header" data-aos="fade-down" data-aos-delay="700">
         <div class="header-right">
             <div class="header-logo">
-                <i class="fa-solid fa-bars" data-aos="fade-right"></i>
-                <img src="./src/assets/gow-logo.png" alt="God of War logo" data-aos="fade-up">
+                <i onclick="menuEvent()" id="menu" class="fa-solid fa-bars"></i>
+                <img src="./src/assets/gow-logo.png" alt="God of War logo">
             </div>
             <nav class="header-nav">
                 <ul class="header-menu">
@@ -38,7 +38,7 @@
                 </ul>
             </nav>
         </div>
-        <button class="header-button" data-aos="flip-left">
+        <button class="header-button">
             <a href="#buy">Compre Agora</a>
         </button>
     </header>
@@ -46,11 +46,11 @@
     
     <!-- Main -->
     <main id="main">
-        <img src="./src/assets/gow-banner2.png" alt="" data-aos="fade-down" data-aos-delay="200">
-        <div class="main-info">
-            <h1 data-aos="fade-right" data-aos-delay="300">A redenção do temido Deus da Guerra</h1>
-            <p data-aos="fade-right" data-aos-delay="300">Viva uma nova jornada de Kratos, o antigo Deus da Guerra, e seu filho Atreus, em busca do topo mais alto dos Noves Reinos Nórdicos</p>
-            <button class="main-button" data-aos="flip-left" data-aos-delay="300">
+        <img src="./src/assets/gow-banner2.png" alt="" data-aos="fade-down" data-aos-delay="500">
+        <div class="main-info" data-aos="fade-right" data-aos-delay="700">
+            <h1>A redenção do temido Deus da Guerra</h1>
+            <p>Viva uma nova jornada de Kratos, o antigo Deus da Guerra, e seu filho Atreus, em busca do topo mais alto dos Noves Reinos Nórdicos</p>
+            <button class="main-button">
                 <a href="#content">Saiba Mais</a>
             </button>
         </div>
@@ -61,15 +61,15 @@
     <section id="highlights">
         <h1 data-aos="fade-up">Destaques</h1>
         <div class="highlights-content">
-            <div class="got" data-aos="fade-right">
+            <div class="got" data-aos="fade-right" data-aos-delay="300">
                 <img src="./src/assets/got-logo-white.png" alt="">
                 <p>Em 2018, foi premiado como o Jogo do Ano no evento The Game Awards</p>
             </div>
-            <div class="studio" data-aos="fade-right">
+            <div class="studio" data-aos="fade-right" data-aos-delay="300">
                 <img src="./src/assets/studio-logo-white.png" alt="">
                 <p>Seu desenvolvimento foi liderado por Cory Barlog, diretor criativo da Santa Mônica Studio</p>
             </div>
-            <div class="sales" data-aos="fade-right">
+            <div class="sales" data-aos="fade-right" data-aos-delay="300">
                 <img src="./src/assets/gow-icon.png" alt="">
                 <p>Já vendeu aproximadamente 23 milhões de cópias em todo o mundo</p>
             </div>
@@ -80,10 +80,10 @@
     <!--Section Content-->
     <section id="content">
         <h1 data-aos="fade-up">Garanta uma Experiência Inesquecível</h1>
-        <div class="content-info">
+        <div class="content-info" data-aos="zoom-in" data-aos-delay="500">
             <i class="fa-solid fa-circle-chevron-left" data-aos="flip-right"></i>
-                <img class="image" src="./src/assets/gow-content-1.jpg" alt="" data-aos="fade-up">
-                <div class="content-info-text" data-aos="fade-up" data-aos-delay="200">
+                <img class="image" src="./src/assets/gow-content-1.jpg" alt="">
+                <div class="content-info-text" data-aos="fade-up" data-aos-delay="700">
                     <h2>Mergulhe na História</h2>
                     <p>Desvende os mistérios de uma narrativa épica e emocional em God of War, viajando pelos mitos nórdicos ao lado de Kratos e seu filho Atreus, enquanto eles embarcam em uma jornada marcada por traições, deuses poderosos e segredos sombrios.</p>
                 </div>
@@ -96,7 +96,7 @@
     <section id="trailer">
         <h1 data-aos="fade-up">Confira o Trailer</h1>
         <div class="trailer-content">
-            <div class="trailer-iframe"  data-aos="zoom-in">
+            <div class="trailer-iframe"  data-aos="zoom-in" data-aos-delay="500">
                 <iframe src="https://www.youtube.com/embed/K0u_kAWLJOA?si=IHei-hBZjRGHcVG_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
@@ -106,8 +106,8 @@
     <!--Section Buy-->
     <section id="buy">
         <h1 data-aos="fade-up">Disponível para Compra</h1>
-        <div class="buy-container" data-aos="fade-up">
-            <div class="cover" data-aos="zoom-in" data-aos-delay="300">
+        <div class="buy-container" data-aos="fade-up" data-aos-delay="500">
+            <div class="cover" data-aos="zoom-in" data-aos-delay="700">
                 <img src="./src/assets/gow-cover.jpeg" alt="">
             </div>
             <div class="buy-info">
@@ -173,6 +173,28 @@
         <span>Desenvolvido por Kalyl Semi Diab</span>
     </div>
     <!--Development-->
+
+    <!--Menu-->
+    <nav class="menu-absolute">
+        <ul>
+            <li>
+                <a href="#main">Início</a>
+            </li>
+            <li>
+                <a href="#highlights">Destaques</a>
+            </li>
+            <li>
+                <a href="#content">Conteúdo</a>
+            </li>
+            <li>
+                <a href="#trailer">Trailer</a>
+            </li>
+        </ul>
+        <button class="menu-button">
+            <a href="#buy">Compre Agora</a>
+        </button>
+    </nav>
+    <!--Menu-->
 </body>
 <script src="./script.js"></script>
 </html>

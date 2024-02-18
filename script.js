@@ -47,3 +47,17 @@ function after() {
 
 back.addEventListener('click', previous);
 next.addEventListener('click', after);
+
+const menu = document.querySelector('.menu-absolute');
+const menuClosed = document.getElementById("menu");
+const menuOpen = "fa-x";
+const button = document.querySelector(".header-button");
+
+function menuEvent() {
+    menuClosed.classList.toggle("fa-bars");
+    menuClosed.classList.toggle(menuOpen);
+    menu.classList.toggle("open");
+    button.classList.toggle("closed");
+}
+
+menu.addEventListener('click', menuEvent);

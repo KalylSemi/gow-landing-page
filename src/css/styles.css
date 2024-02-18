@@ -18,7 +18,7 @@
 #header .header-right .header-logo {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 #header .header-right .header-logo img {
@@ -26,8 +26,8 @@
 }
 
 #header .header-right .header-logo i {
-    font-size: 30px;
     display: none;
+    transition: 0.2s;
 }
 
 #header .header-right .header-nav .header-menu {
@@ -39,6 +39,14 @@
     color: var(--white);
     font-family: 'JosefinSans-Regular';
     font-size: 18px;
+    transition: 0.3s;
+}
+
+#header .header-right .header-nav .header-menu li a:hover {
+    background: var(--button-red);
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 #header .header-button {
@@ -46,6 +54,11 @@
     color: var(--white);
     border-radius: 10px;
     padding: 15px;
+    transition: transform 0.3s;
+}
+
+#header .header-button:hover {
+    transform: translateY(-2px) scale(1.09);
 }
 
 #header .header-button a {
@@ -105,6 +118,11 @@
     background-image: var(--button-red);
     border-radius: 10px;
     padding: 20px;
+    transition: transform 0.3s;
+}
+
+#main .main-info .main-button:hover {
+    transform: translateY(-2px) scale(1.09);
 }
 
 #main .main-info .main-button a {
@@ -200,6 +218,15 @@
 
 #content .content-info i {
     font-size: 30px;
+    transition: transform 0.3s;
+}
+
+
+#content .content-info i:hover {
+    background: var(--button-red);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.2);
 }
 
 #content .content-info .image {
@@ -311,13 +338,13 @@
     gap: 100px;
     padding: 50px;
     z-index: 1;
-    /*transition: all 1s;*/
+    transition: transform 1s;
 }
-/*
+
 #buy .buy-container:hover {
-    transform: perspective(1000px) rotateX(2deg) rotateY(-5deg);
+    transform: perspective(1200px) rotateX(2deg) rotateY(-5deg);
 }
-*/
+
 #buy .buy-container .cover {
     max-width: 40%;
 }
@@ -363,6 +390,11 @@
 
 #buy .buy-container .buy-info .buy-button {
     width: 100%;
+    transition: transform 0.3s;
+}
+
+#buy .buy-container .buy-info .buy-button:hover {
+    transform: translateY(-2px) scale(1.09);
 }
 
 #buy .buy-container .buy-info .buy-button button {
@@ -392,13 +424,21 @@
 #footer .footer-nav .footer-menu {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
 #footer .footer-nav .footer-menu li a {
     color: var(--white);
     font-family: 'JosefinSans-Regular';
     font-size: 18px;
+    transition: all 0.3s;
+}
+
+#footer .footer-nav .footer-menu li a:hover {
+    background: var(--button-red);
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 #footer .footer-logo {
@@ -425,6 +465,18 @@
 
 #footer .footer-nav-social .footer-menu-social li a {
     font-size: 25px;
+    transition: all 0.3s;
+}
+
+#footer .footer-nav-social .footer-menu-social li a i {
+    transition: all 0.3s;
+}
+
+#footer .footer-nav-social .footer-menu-social li a i:hover {
+    background: var(--button-red);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateY(-3px) scale(1.2);
 }
 /*Footer*/
 
@@ -441,3 +493,55 @@
     font-size: 10px;
 }
 /*Development*/
+
+/*Menu*/
+.menu-absolute {
+    background: var(--black-gradient-background-top);
+    backdrop-filter: blur(5px);
+    width: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px 20px;
+    visibility: hidden;
+    z-index: 100;
+    transition: 0.2s;
+}
+
+.menu-absolute ul li a {
+    color: var(--white);
+    display: block;
+    text-align: center;
+    font-family: 'JosefinSans-Medium';
+    font-size: 16px;
+    border-bottom: solid 0.5px var(--white);
+    padding: 20px 0;
+}
+
+.menu-absolute ul li a:hover {
+    background: var(--button-red);
+    border: hidden;
+}
+
+.menu-absolute .menu-button {
+    background-image: var(--button-red);
+    color: var(--white);
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.menu-absolute .menu-button:hover {
+    transform: scale(1.05);
+}
+
+.menu-absolute .menu-button a {
+    font-family: 'JosefinSans-Medium';
+    font-size: 12px;
+}
+/*Menu*/

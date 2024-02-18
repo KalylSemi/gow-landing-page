@@ -5,12 +5,23 @@
     }
 
     #header .header-right .header-logo i {
-        display: flex;
+        display: block;
+        font-size: 30px;
     }
     
     #header .header-right .header-nav {
         display: none;
     }
+
+    #header .header-button.closed {
+        visibility: hidden;
+    }
+
+    .menu-absolute.open {
+        width: 50%;
+        visibility: visible;
+    }
+
     /*Header*/
 
     /*Main*/
