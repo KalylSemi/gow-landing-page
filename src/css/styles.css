@@ -226,7 +226,7 @@
     background: var(--button-red);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 #content .content-info .image {

@@ -1,5 +1,3 @@
-AOS.init();
-
 const back = document.querySelector(".fa-circle-chevron-left");
 const next = document.querySelector(".fa-circle-chevron-right");
 
